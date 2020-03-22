@@ -1,4 +1,3 @@
-const bcrypt = require('bcryptjs');
 const httpStatus = require('http-status');
 const dayjs = require('dayjs');
 const uuidv4 = require('uuid/v4');

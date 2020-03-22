@@ -21,6 +21,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api/v1', router);
 
 // Validation error response
+// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
   if (err instanceof ValidationError) {
     return res.status(err.statusCode).json(err);
