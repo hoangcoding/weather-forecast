@@ -1,0 +1,46 @@
+{
+  "name": "thinkific-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "DEBUG=thinkific-backend:server nodemon bin/www",
+    "lint": "eslint src/**",
+    "pretest": "npm run lint",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "coverage": "jest --collectCoverageFrom=src/**.js --coverage src"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "verbose": true
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.8.23",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-validation": "^3.0.2",
+    "helmet": "^3.21.3",
+    "http-status": "^1.4.2",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^5.9.5",
+    "morgan": "~1.9.1",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "supertest": "^4.0.2"
+  }
+}

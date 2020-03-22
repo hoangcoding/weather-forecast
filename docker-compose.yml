@@ -1,0 +1,14 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./thinkific-backend
+    ports:
+      - "5000:5000"
+  frontend:
+    build:
+      context: ./thinkific-frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"

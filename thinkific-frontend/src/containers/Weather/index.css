@@ -1,0 +1,10 @@
+.suggestion {
+  background-color: #f1f1f1;
+  color: gray;
+  font-size: 1.2rem;
+  padding: 0.25em 0.7em;
+  cursor: pointer;
+}
+.searchbox-container {
+  padding: 16px 24px;
+}
